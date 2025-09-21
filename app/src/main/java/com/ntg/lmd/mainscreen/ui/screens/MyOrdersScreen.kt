@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavController
+import com.google.android.gms.location.LocationServices
 import com.ntg.lmd.R
 import com.ntg.lmd.mainscreen.domain.model.OrderStatus
 import com.ntg.lmd.mainscreen.ui.components.OrdersContentCallbacks
@@ -196,8 +197,7 @@ private fun myOrdersLocationSection(
 ) {
     locationPermissionHandler(
         onPermissionGranted = { ctx ->
-            val fused =
-                com.google.android.gms.location.LocationServices
+            val fused = LocationServices
                     .getFusedLocationProviderClient(ctx)
             fused.lastLocation.addOnSuccessListener { loc ->
                 deps.poolVm.updateDeviceLocation(loc)

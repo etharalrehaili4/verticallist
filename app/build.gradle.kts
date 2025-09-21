@@ -192,6 +192,9 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.koin.androidx.compose)
 
+    // vertical list library
+    implementation(project(":verticalList"))
+
 }
 
 // Custom tasks for code quality checks
