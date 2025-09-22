@@ -76,4 +76,9 @@ dependencies {
     implementation(libs.paging.compose)
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
 
+    // what to write here?
+    implementation("com.github.User:Repo:Tag")
+    implementation("com.github.ntg.lms:verticalList:1.0.0")
+
+
 }
