@@ -42,7 +42,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
 
-                groupId = "com.github.ntg.lms"
+                groupId = "com.github.lmsntgclarity-jpg"
                 artifactId = "verticallist"
                 version = "1.0.0"
             }
@@ -76,6 +76,6 @@ dependencies {
     implementation(libs.paging.compose)
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
 
-    implementation("com.github.ntg.lms:verticalList:1.0.0")
+//    implementation("com.github.ntg.lms:verticalList:1.0.0")
 
 }
