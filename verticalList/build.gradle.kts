@@ -42,7 +42,8 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
 
-                groupId = "com.github.ntg.lms"
+//                groupId = "com.github.ntg.lms"
+                groupId = "org.bitbucket.ntglms"
                 artifactId = "verticallist"
                 version = "1.0.0"
             }
@@ -78,7 +79,9 @@ dependencies {
 
     // what to write here?
     implementation("com.github.User:Repo:Tag")
-    implementation("com.github.ntg.lms:verticalList:1.0.0")
+//    implementation("com.github.ntg.lms:verticalList:1.0.0")
+    implementation("org.bitbucket.ntglms:lmd:1.0.0")
+
 
 
 }
