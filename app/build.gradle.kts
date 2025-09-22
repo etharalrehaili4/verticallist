@@ -195,7 +195,9 @@ dependencies {
     implementation(libs.koin.androidx.compose)
 
     // vertical list library
-    implementation(project(":verticalList"))
+//    implementation(project(":verticalList"))
+    implementation("org.bitbucket.ntglms:verticallist:1.0.0")
+
 
 }
 
