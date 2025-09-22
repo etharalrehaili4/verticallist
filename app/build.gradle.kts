@@ -1,3 +1,5 @@
+// build.gradle.kts (:app)
+
 @file:Suppress("DEPRECATION")
 
 import io.gitlab.arturbosch.detekt.Detekt
