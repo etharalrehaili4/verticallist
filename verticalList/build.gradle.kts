@@ -1,5 +1,3 @@
-// build.gradle.kts (:verticalList)
-
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -44,8 +42,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
 
-//                groupId = "com.github.ntg.lms"
-                groupId = "org.bitbucket.ntglms"
+                groupId = "com.github.ntg.lms"
                 artifactId = "verticallist"
                 version = "1.0.0"
             }
@@ -79,11 +76,6 @@ dependencies {
     implementation(libs.paging.compose)
     implementation("androidx.compose.material:material-icons-extended:1.7.8")
 
-    // what to write here?
-    implementation("com.github.User:Repo:Tag")
-//    implementation("com.github.ntg.lms:verticalList:1.0.0")
-    implementation("org.bitbucket.ntglms:lmd:1.0.0")
-
-
+    implementation("com.github.ntg.lms:verticalList:1.0.0")
 
 }

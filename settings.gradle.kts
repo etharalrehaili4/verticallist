@@ -1,5 +1,3 @@
-// settings.gradle.kts (lmd)
-
 pluginManagement {
     repositories {
         google {

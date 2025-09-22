@@ -1,5 +1,3 @@
-// build.gradle.kts (:app)
-
 @file:Suppress("DEPRECATION")
 
 import io.gitlab.arturbosch.detekt.Detekt
@@ -195,8 +193,7 @@ dependencies {
     implementation(libs.koin.androidx.compose)
 
     // vertical list library
-//    implementation(project(":verticalList"))
-    implementation("org.bitbucket.ntglms:verticallist:1.0.0")
+    implementation(project(":verticalList"))
 
 
 }
