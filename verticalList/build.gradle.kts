@@ -42,7 +42,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 from(components["release"])
 
-                groupId = "com.github.lmsntgclarity-jpg"
+                groupId = "com.github.etharalrehaili4"
                 artifactId = "verticallist"
                 version = "1.0.0"
             }
